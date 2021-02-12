@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html> 
+
+	<head> 
+		<title>My Page</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<style type="text/css">
+
+			body{
+				background: #61bd8c;
+				padding: 10px;
+
+			}
+
+			#main-content{
+				background: #FFFFFF;
+				padding: 10px;
+				width: 600px;
+				margin: 30px auto;
+			}
+
+			.box{
+				background: #1e6f44;
+				width: 100px;
+				height: 100px;
+				color: white;
+			}
+
+			#relative1{
+				position: relative;
+				left: 30px;
+				top: 50px;
+			}
+
+			#relative2{
+				position: relative;
+				left: 0px;
+				top: 0px;
+			}
+
+			#relative3{
+				position: relative;
+				left: -30px;
+				top: 0px;
+				width: 660px;
+			}
+			
+		</style>
+
+	</head>
+
+	<body>
+
+		<div id="main-content">
+			
+			<h1>Position</h1>
+
+
+			<h4>Relative Position1</h4>
+			<div id="relative1" class="box">Relative1</div>
+
+			<h4>Relative Position2</h4>
+			<div id="relative2" class="box">Relative2</div>
+
+			<h4>Relative Position3</h4>
+			<div id="relative3" class="box">Relative3</div>
+
+		</div>
+		
+	</body>
+
+</html>
+
+<!--  Relative: Is the position of the elements from him self  -->
+
+<!--  In the example bellow, the relative position is config with the properties of the main-content -> padding:10px - width:600px; - margin: 30px;. With main-content padding 10px, the green box is 40px total from left from the white box  -->
+
+<!-- If you put padding in the main-content as 0px and in relative class left=30px- the green box will be 30 px from the white box -->
+
+<!-- If you put left and top as 0px, the element will return to the original position -->
+
+<!-- You can put negative values -->

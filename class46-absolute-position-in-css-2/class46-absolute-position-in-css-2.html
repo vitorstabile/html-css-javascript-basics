@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html> 
+
+	<head> 
+		<title>My Page</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<style type="text/css">
+
+			body{
+				background: #61bd8c;
+				padding: 10px;
+
+			}
+
+			#main-content{
+				background: #FFFFFF;
+				padding: 10px;
+				width: 600px;
+				height: 600px;
+				margin: 30px auto;
+				position: relative;
+			}
+
+			.box{
+				background: #1e6f44;
+				width: 100px;
+				height: 100px;
+				color: white;
+			}
+
+			#absolute1{
+				position: absolute;
+			}
+
+			#absolute2{
+				position: absolute;
+				left: 0px;
+			}
+
+			#absolute3{
+				position: absolute;
+				top: 0px;
+			}
+			
+		</style>
+
+	</head>
+
+	<body>
+
+		<div id="main-content">
+			
+			<h1>Position</h1>
+
+			<h4>Absolute Position1</h4>
+			<div id="absolute1" class="box">Absolute1</div>
+
+			<h4>Absolute Position2</h4>
+			<div id="absolute2" class="box">Absolute2</div>
+
+			<h4>Absolute Position3</h4>
+			<div id="absolute3" class="box">Absolute3</div>
+
+		</div>
+		
+	</body>
+
+</html>
+
+<!--  In Css, we have 3 main positions - Relative, Absolute and Fixed -->
+
+<!--  Absolute:  When you put this propert in the element, he will not follow the patterns from the content that he is alocated -->
+
+<!--  In the case, he will be in the position of the body or in the next element that have a position (He is not more in the main content, so he will be absolute from the body) -->
+
+<!-- If the main-content have a position, in this case, relative, the absolute box will be position from the main-content -> See class46-absolute-position-in-css-2 -->
