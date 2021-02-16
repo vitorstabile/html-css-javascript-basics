@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html> 
+
+	<head> 
+		<title>My Page</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<style type="text/css">
+			
+			@keyframes animacao-box{
+
+				from {
+					background: red; 
+					border-radius: 0px;
+					top:0; 
+					left: 0;
+					}
+
+				to {
+					background: yellow; 
+					border-radius: 300px; 
+					top:200px; 
+					left: 200px;
+				}
+			}
+
+
+			#box-animacao{
+					width: 400px;
+					height: 400px;
+					background: red;
+					position: relative;
+					/*animation-name: animacao-box;
+					animation-duration: 5s;
+					animation-delay: 0s;
+					animation-iteration-count: 2;
+					animation-direction: alternate; */
+
+					animation: animacao-box 5s 3s 2 alternate
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+	
+		<div id="box-animacao"></div>
+
+	</body>
+
+</html>
+
+<!-- To create a animation in CSS, we have to use the @keyframes animationname anottation to put the attributes -->
+
+<!-- From: The initial state of the animation and to the final state of the animation -->
+
+<!-- In the element that we want to make the animation, we have to put animation-name: -->
+
+<!-- Animation Duration to define the duration of the animation -->
+
+<!-- Animation-delay is the hold time to star the animation -->
+
+<!-- animation-iteration-count is how many times we want to make the animations -->
+
+<!-- We can define border in animations -->
+
+<!-- To define if the animation will return the inital state, use the animation direction -->
+
+<!-- To move animations, we have to pute position relative -->
+
